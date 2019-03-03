@@ -16,39 +16,39 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ivmm/LLStack/master/vhost.
 
 一、输入虚拟主机主域名，这里的域名也将作为配置文件的名称。输入不带www的域名会默认添加www的配置。
 
-![enter description here](https://pics.mf8.biz/xsj/2019/2/1549435833936.png)
+![](https://pics.mf8.biz/picgo20190302231906.png)
 
 二、输入网站管理员邮箱，当网站报错时会弹出管理员邮箱，让用户进行报警
 
-![enter description here](https://pics.mf8.biz/xsj/2019/2/1549435862769.png)
+![](https://pics.mf8.biz/picgo20190302231933.png)
 
 三、输入该虚拟主机的PHP版本，这里将默认显示安装脚本时的默认版本，我们可以选择其他版本。  教程请看：[PHP 多版本安装](/php/#PHP 多版本安装) 
 
-![enter description here](https://pics.mf8.biz/xsj/2019/2/1549435917532.png)
+![](https://pics.mf8.biz/picgo20190302231949.png)
 
-四、我们可以在这里添加更多的子域名，这里拿www举例，但其实没有必要添加www。
+四、我们可以在这里添加更多的子域名
 
-![1549436327492](C:\Users\ivmm\Documents\GitHub\LLStack-Docs\docs\zh\1549436327492.png)
+![](https://pics.mf8.biz/picgo20190302232014.png)
 
 五、然后确认是否要开启HTTPS
 
-![enter description here](https://pics.mf8.biz/xsj/2019/2/1549696253600.png)
+![](https://pics.mf8.biz/picgo20190302232316.png)
 
 六、然后会让我们输入 密钥文件（.Key）和证书文件（.crt）的路径，不一定马上就要存在，我们可以后续等创建完虚拟主机后再放到对应的路径上（会有报错，但是可以忽略）。
 
-![enter description here](https://pics.mf8.biz/xsj/2019/2/1549696548636.png)
+![](https://pics.mf8.biz/picgo20190302232104.png)
 
 七、是否开启 HTTP/3 即 QUIC 功能，输入 `y` 为开启，该功能已经稳定可以适当用于生产环境
 
-![1549696608038](C:\Users\ivmm\Documents\GitHub\LLStack-Docs\docs\zh\vhost\1549696608038.png)
+![](https://pics.mf8.biz/picgo20190302231808.png)
 
 八、然后我们输入任意键即可开始自动配置，`CTRL+C` 为取消
 
-![1549696687817](C:\Users\ivmm\Documents\GitHub\LLStack-Docs\docs\zh\vhost\1549696687817.png)
+![](https://pics.mf8.biz/picgo20190302232148.png)
 
 六、然后就可以看到输出了。
 
-![1549696701332](C:\Users\ivmm\Documents\GitHub\LLStack-Docs\docs\zh\vhost\1549696701332.png)
+![](https://pics.mf8.biz/picgo20190302232208.png)
 
 ## 虚拟主机目录介绍
 
@@ -66,3 +66,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ivmm/LLStack/master/vhost.
 默认开启 TLS `1.0` `1.1` `1.2` `1.3`
 
 默认开启 HTTP/2
+

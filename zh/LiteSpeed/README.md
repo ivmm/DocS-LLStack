@@ -1,3 +1,7 @@
+---
+sidebarDepth: 3
+---
+
 # 介绍
 
 LiteSpeed 即 LiteSpeed Web Server（简称 LSWS），是一款企业级商用 Web 服务软件，可以完美的 Apache HTTPD 兼容体验，.htaccess 规则可以直接兼容而不像 Nginx 需要重写，并兼容常用的mod扩展。得益于基于事件的架构优势，静态内容比Apache Httpd 快 5 倍 ，动态内容更是快 40 倍，HTTPS 访问快 3 倍并可以应用硬件加速器。

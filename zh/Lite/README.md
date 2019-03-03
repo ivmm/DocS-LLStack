@@ -1,17 +1,20 @@
-# 快速上手
+---
+title: LLStack-轻量版安装
+sidebar: auto
+---
 
-```text
+# LLStack-轻量版安装 
+
+轻量版脚本只提供 LiteSpeed 的图形化面板，其他 PHP、MySQL（MariaDB）的管理全部使用软件默认的配置文件，适合高手和不习惯面板的同学使用。
+
 ::: warning 注意
 LLStack 仅适用于 RHEL 7 系操作系统及其衍生版，RHEL7、CentOS7、OracleLinux7、CloudLinux 7等。
 RHEL 8 系正在测试中。
 :::
-```
 
-```text
 ::: danger 开通授权
 LiteSpeed 为商业化软件，免费使用则需要获取试用key或者激活序列号， 免费获得教程地址： 
 :::
-```
 
 ## 安装
 
@@ -65,6 +68,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ivmm/LLStack/master/instal
 
 ![enter description here](https://pics.mf8.biz/xsj/2019/2/1549346575437.png)
 
+::: tip 添加虚拟主机
+请参考：[**虚拟主机管理**](/zh/vhost/)
+:::
+
 ## 升级
 
 由于采用二进制 RPM 软件包进行组件的安装，所以升级体验会非常棒！
@@ -99,7 +106,7 @@ yum upgrade -y php73-php-litespeed php73-php-bcmath php73-php-gd php73-php-json 
 
 ## 服务管理
 
-### LiteSpeed 管理
+### LiteSpeed 服务管理
 
 ```bash
 systemctl {start|restart|stop|reload|condrestart|try-restart|status|help} lsws.service
@@ -125,6 +132,33 @@ systemctl start lsws.service
 
 ```bash
 systemctl restart lsws.service
+```
+
+### LiteSpeed 图形化管理
+
+**面板地址：**
+
+```
+https://你的公网ip:7080
+```
+
+**密码：**(安装结束后会提示)
+
+```bash
+LiteSpeed WebAdmin Console Username:  llstackadmin
+LiteSpeed WebAdmin Console Paasword:  BgPRLeBj8R4el1Wv
+```
+
+如果已经忘记密码了，如下命令可以帮助我们找回密码。
+
+```bash
+cat /root/defaulthtpasswd
+```
+
+如果需要修改密码可以通过如下命令实现：
+
+```bash
+/usr/local/lsws/admin/misc/admpass.sh
 ```
 
 ### PHP管理

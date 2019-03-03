@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # PHP 管理
 
 ## PHP 多版本安装
@@ -71,7 +75,7 @@ phpversion=php<你的PHP版本>
 
 默认已经安装
 
-### SWOOLE 扩展
+### Swoole 扩展
 
 php54 - 71 可以安装 Swoole 1：
 
